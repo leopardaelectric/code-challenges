@@ -8,6 +8,7 @@ Welcome to **Vammo's Coding Challenges Repository**! This public repository cont
 ## 🎯 Purpose
 
 These challenges are designed to:
+
 - Evaluate problem-solving skills and technical proficiency
 - Showcase candidates' ability to design and implement clean solutions
 - Provide a practical demonstration of coding abilities
@@ -17,17 +18,17 @@ These challenges are designed to:
 
 ### Backend Challenges
 
-| Challenge | Difficulty | Focus | Description |
-|-----------|------------|-------|-------------|
-| [**Trip Segmenter**](./backend/trip-segmenter/) | Medium | Backend Logic | Build a service that segments motorcycle GPS pings into logical trips based on movement patterns |
+| Challenge                                       | Difficulty | Focus         | Description                                                                                      |
+| ----------------------------------------------- | ---------- | ------------- | ------------------------------------------------------------------------------------------------ |
+| [**Trip Segmenter**](./backend/trip-segmenter/) | Medium     | Backend Logic | Build a service that segments motorcycle GPS pings into logical trips based on movement patterns |
 
 ### Frontend Challenges
 
-*Coming soon...*
+_Coming soon..._
 
 ### Full-Stack Challenges
 
-*Coming soon...*
+_Coming soon..._
 
 ## 🚀 Getting Started
 
@@ -40,12 +41,14 @@ These challenges are designed to:
 ## 📋 Guidelines
 
 ### General Rules
+
 - Use any programming language, framework, or database you prefer
 - Focus on code quality, readability, and maintainability
 - Include appropriate tests and documentation
 - Consider edge cases and error handling
 
 ### Evaluation Criteria
+
 - **Correctness**: Does the solution work as specified?
 - **Code Quality**: Is the code clean, well-structured, and documented?
 - **Architecture**: Are design decisions well-reasoned?
@@ -53,6 +56,7 @@ These challenges are designed to:
 - **Testing**: Are edge cases and error scenarios covered?
 
 ### Submission
+
 - Create a **public GitHub repository** with your solution
 - Include a README explaining your approach, design decisions, and setup instructions
 - Send the repository link to your interviewer
@@ -63,8 +67,7 @@ This repository is maintained by the Vammo engineering team. If you're a Vammo t
 
 1. Create a new folder under the appropriate category (backend/, frontend/, etc.)
 2. Include a comprehensive README.md with requirements, examples, and evaluation criteria
-3. Test the challenge internally before publishing
-4. Update this main README to include the new challenge
+3. Update this main README to include the new challenge
 
 ## 📞 Contact
 
@@ -74,4 +77,4 @@ For questions about these challenges or the interview process, reach out to your
 
 **Happy coding!** 🚀
 
-*Built with ❤️ by the Vammo Engineering Team*
+_Built with ❤️ by the Vammo Engineering Team_
