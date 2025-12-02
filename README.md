@@ -1,7 +1,6 @@
 # 🏆 Vammo Code Challenges
 
 [![Vammo](https://img.shields.io/badge/Vammo-Tech%20Company-blue.svg)](https://www.vammo.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Welcome to **Vammo's Coding Challenges Repository**! This public repository contains technical challenges used in our interview process for software engineering positions.
 
