@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  repo-brain launchd agent (macOS) — keeps the watcher running across logins.
+
+  Setup (setup.sh prints a ready-to-run version of these commands):
+    SID=$(cat .gbrain-source); REPO=$(pwd)
+    sed -e "s|__SOURCE_ID__|$SID|g" -e "s|__REPO__|$REPO|g" \
+        .githooks/launchd.plist.template > ~/Library/LaunchAgents/com.vammo.gbrain.$SID.plist
+    launchctl load ~/Library/LaunchAgents/com.vammo.gbrain.$SID.plist
+  Stop:
+    launchctl unload ~/Library/LaunchAgents/com.vammo.gbrain.$SID.plist
+
+  launchd needs an absolute PATH to find `gbrain` and `git`. Adjust the PATH
+  entry below to match your shell (`echo $PATH`, `which gbrain`).
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.vammo.gbrain.__SOURCE_ID__</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO__/.githooks/brain-watch.sh</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>REPO</key>
+    <string>__REPO__</string>
+    <key>GBRAIN_HOME</key>
+    <string>__REPO__/.gbrain</string>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>__REPO__</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>__REPO__/.gbrain/watch.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO__/.gbrain/watch.err.log</string>
+</dict>
+</plist>
